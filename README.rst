@@ -45,7 +45,7 @@ Requirements
 ============
 
     * Django (>=1.2)
-    * PIL
+    * Pillow
 
 
 Browser Support
