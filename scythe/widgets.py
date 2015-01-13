@@ -106,9 +106,9 @@ class AdminScytheWidget(forms.ClearableFileInput):
             return False
         from StringIO import StringIO
         from django.core.files.uploadedfile import InMemoryUploadedFile
-        import Image
+        from PIL import Image
         import os
-        import ImageFile
+        from PIL import ImageFile
         ImageFile.MAXBLOCK = 1024 * 1024 # default is 64k - avoids 'Suspension not allowed here' error
         postedimg = files.get(name, None)
         originalimg_id = False
